@@ -1,8 +1,13 @@
+import { Box } from "@/app/components/atom/Box";
+import { PrimaryButton } from "@/app/components/atom/PrimaryButton";
 import Image from "next/image";
+import { About } from "../about/About";
+import { CaraouselSpot } from "./CaraouselSpot";
+import { Wisata } from "../wisata/Wisata";
 export const Home = () => {
   return (
-    <section className="flex min-h-screen w-screen px-6">
-      <section className="h-[900px] w-[1400px] py-20 md:py-24">
+    <section className="flex min-h-screen w-screen flex-col gap-20 pb-20">
+      <section className="h-[900px] w-full px-10 md:pt-24">
         <div className="relative h-full w-full items-center justify-center">
           <Image
             src="/images/hero.webp"
@@ -28,9 +33,30 @@ export const Home = () => {
               A breathtaking limestone karst area surrounded by lush greenery
               and calm rivers in Maros, Indonesia
             </p>
+            <PrimaryButton fullwidth={false} className="text-white">
+              Learn More
+            </PrimaryButton>
           </section>
         </div>
       </section>
+      <section className="flex items-center justify-center gap-16 px-10">
+        <Box>
+          <p className="text-heading-l font-bold">3+</p>
+          <p>Activities</p>
+        </Box>
+        <Box>
+          <p className="text-heading-l font-bold">250k+</p>
+          <p>Annual visitors per years</p>
+        </Box>
+        <Box>
+          <p className="text-heading-l font-bold">3+</p>
+          <p>activities</p>
+        </Box>
+      </section>
+      <About />
+
+      <CaraouselSpot />
+      <Wisata />
     </section>
   );
 };
