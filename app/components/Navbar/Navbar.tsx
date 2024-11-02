@@ -29,7 +29,7 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`fixed z-[60] flex w-screen justify-between px-14 py-6 transition-colors duration-300 md:px-20 ${isScroll ? "bg-black text-white opacity-80" : ""}`}
+      className={`fixed z-[60] flex w-screen justify-between px-8 py-6 transition-colors duration-300 md:px-20 ${isScroll ? "bg-black text-white opacity-80" : ""}`}
     >
       <h1 className="text-text-l font-bold md:text-heading-s">
         Rammang-Rammang

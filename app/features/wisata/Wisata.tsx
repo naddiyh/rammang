@@ -3,8 +3,8 @@ import { DataWisata } from "./dataWisata";
 import Image from "next/image";
 export const Wisata = () => {
   return (
-    <section className="flex flex-col gap-10 px-10">
-      <h1 className="px-10 text-heading-l font-bold">
+    <section className="flex flex-col gap-10 px-8">
+      <h1 className="text-heading-l font-bold md:px-10">
         Various kinds of beautiful caves
       </h1>
       <section className="grid grid-cols-1 gap-6 md:grid-cols-3">

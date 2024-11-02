@@ -4,10 +4,11 @@ import Image from "next/image";
 import { About } from "../about/About";
 import { CaraouselSpot } from "./CaraouselSpot";
 import { Wisata } from "../wisata/Wisata";
+import { Location } from "./Location";
 export const Home = () => {
   return (
     <section className="flex min-h-screen w-screen flex-col gap-20 pb-20">
-      <section className="h-[900px] w-full px-8 pt-20 md:px-10 md:pt-24">
+      <section className="h-[900px] w-full px-6 pt-20 md:px-10 md:pt-24">
         <div className="relative h-full w-full items-center justify-center">
           <Image
             src="/images/hero.webp"
@@ -17,7 +18,7 @@ export const Home = () => {
             objectPosition="top"
             className="rounded-xl brightness-50"
           />
-          <section className="absolute flex w-full flex-col gap-4 px-10 pt-40 md:gap-8 md:px-24 md:pt-52">
+          <section className="absolute flex w-full flex-col gap-4 px-10 pt-52 md:gap-8 md:px-24">
             <p className="text-text-l text-white md:text-heading-m">
               Explore the Beauty of Nature
             </p>
@@ -25,7 +26,7 @@ export const Home = () => {
               <h2 className="text-heading-l font-semibold leading-none text-white md:text-[60px]">
                 The Wonderful of
               </h2>
-              <h2 className="text-heading-m font-semibold text-white md:text-[60px]">
+              <h2 className="text-heading-l font-semibold text-white md:text-[60px]">
                 Rammang-Rammang
               </h2>
             </div>
@@ -39,7 +40,7 @@ export const Home = () => {
           </section>
         </div>
       </section>
-      <section className="flex flex-col items-center justify-center gap-16 px-10 md:flex-row">
+      <section className="flex flex-col items-center justify-center gap-10 px-10 md:flex-row md:gap-16">
         <Box>
           <p className="text-heading-l font-bold">3+</p>
           <p>Activities</p>
@@ -58,7 +59,7 @@ export const Home = () => {
       <Wisata />
       <section className="relative flex min-h-screen w-full flex-col items-center py-24">
         <h2 className="z-20 text-heading-m font-semibold text-white md:text-[50px]">
-          Let's Go To Rammang
+          Let{"'"}s Go To Rammang
         </h2>
         <Image
           src={"/images/dive.png"}
@@ -69,6 +70,7 @@ export const Home = () => {
           alt={""}
         />
       </section>
+      <Location />
     </section>
   );
 };
