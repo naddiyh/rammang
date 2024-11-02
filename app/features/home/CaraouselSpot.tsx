@@ -15,7 +15,7 @@ export const CaraouselSpot = () => {
   };
   return (
     <section className="flex w-full flex-col gap-16">
-      <h1 className="px-20 text-heading-l font-bold italic">
+      <h1 className="px-10 text-heading-l font-bold italic md:px-20">
         Dive Into The Beauty of The World
       </h1>
 

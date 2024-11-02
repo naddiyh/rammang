@@ -7,7 +7,7 @@ import { Wisata } from "../wisata/Wisata";
 export const Home = () => {
   return (
     <section className="flex min-h-screen w-screen flex-col gap-20 pb-20">
-      <section className="h-[900px] w-full px-10 md:pt-24">
+      <section className="h-[900px] w-full px-8 pt-20 md:px-10 md:pt-24">
         <div className="relative h-full w-full items-center justify-center">
           <Image
             src="/images/hero.webp"
@@ -39,7 +39,7 @@ export const Home = () => {
           </section>
         </div>
       </section>
-      <section className="flex items-center justify-center gap-16 px-10">
+      <section className="flex flex-col items-center justify-center gap-16 px-10 md:flex-row">
         <Box>
           <p className="text-heading-l font-bold">3+</p>
           <p>Activities</p>
@@ -54,9 +54,21 @@ export const Home = () => {
         </Box>
       </section>
       <About />
-
       <CaraouselSpot />
       <Wisata />
+      <section className="relative flex min-h-screen w-full flex-col items-center py-24">
+        <h2 className="z-20 text-heading-m font-semibold text-white md:text-[50px]">
+          Let's Go To Rammang
+        </h2>
+        <Image
+          src={"/images/dive.png"}
+          fill
+          priority
+          objectFit="cover"
+          objectPosition="top"
+          alt={""}
+        />
+      </section>
     </section>
   );
 };

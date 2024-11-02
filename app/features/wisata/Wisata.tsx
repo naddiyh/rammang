@@ -7,7 +7,7 @@ export const Wisata = () => {
       <h1 className="px-10 text-heading-l font-bold">
         Various kinds of beautiful caves
       </h1>
-      <section className="grid grid-cols-3 gap-6">
+      <section className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {DataWisata.map((item) => (
           <Link
             key={item.href}
