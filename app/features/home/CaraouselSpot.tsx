@@ -14,8 +14,8 @@ export const CaraouselSpot = () => {
     event.preventDefault();
   };
   return (
-    <section className="flex w-full flex-col gap-16">
-      <h1 className="px-8 text-heading-l font-bold italic md:px-20">
+    <section className="flex w-full flex-col gap-10 md:gap-16">
+      <h1 className="px-8 text-heading-m font-bold italic md:px-20 md:text-heading-l">
         Dive Into The Beauty of The World
       </h1>
 
@@ -26,7 +26,7 @@ export const CaraouselSpot = () => {
       >
         {DataCaraousel.map((item) => (
           <div
-            className="relative h-[450px] w-[550px] flex-shrink-0"
+            className="relative h-[350px] w-[400px] flex-shrink-0 md:h-[450px] md:w-[550px]"
             key={item.name}
           >
             <Image
@@ -37,8 +37,10 @@ export const CaraouselSpot = () => {
               objectFit="cover"
               className="rounded-md"
             />
-            <div className="absolute bottom-10 flex w-full flex-col rounded-md bg-white/30 p-4 px-16 py-10 text-white backdrop-blur">
-              <p className="text-heading-m font-semibold">{item.name}</p>
+            <div className="absolute bottom-10 flex w-full flex-col rounded-md bg-white/30 px-10 py-4 text-white backdrop-blur md:px-16 md:py-10">
+              <p className="text-text-l font-semibold md:text-heading-m">
+                {item.name}
+              </p>
               <p className="text-heading-s">{item.desc}</p>
             </div>
           </div>
