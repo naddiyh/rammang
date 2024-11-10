@@ -26,7 +26,7 @@ export const CaraouselSpot = () => {
       >
         {DataCaraousel.map((item) => (
           <div
-            className="relative h-[350px] w-[400px] flex-shrink-0 md:h-[450px] md:w-[550px]"
+            className="relative h-[350px] w-[360px] flex-shrink-0 md:h-[450px] md:w-[500px]"
             key={item.name}
           >
             <Image

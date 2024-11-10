@@ -7,8 +7,8 @@ import { Wisata } from "../wisata/Wisata";
 import { Location } from "./Location";
 export const Home = () => {
   return (
-    <section className="flex min-h-screen w-screen flex-col gap-20 pb-20">
-      <section className="h-[900px] w-full px-6 pt-20 md:px-10 md:pt-24">
+    <section className="flex min-h-screen w-screen flex-col gap-10 pb-20 md:gap-20">
+      <section className="h-[900px] w-full px-6 pt-16 md:px-10 md:pt-20">
         <div className="relative h-full w-full items-center justify-center">
           <Image
             src="/images/hero.webp"
@@ -40,7 +40,7 @@ export const Home = () => {
           </section>
         </div>
       </section>
-      <section className="flex flex-col items-center justify-center gap-10 px-10 md:flex-row md:gap-16">
+      <section className="flex flex-col items-center justify-center gap-10 px-10 py-10 md:flex-row md:gap-16 md:py-14">
         <Box>
           <p className="text-heading-l font-bold">3+</p>
           <p>Activities</p>
@@ -57,10 +57,17 @@ export const Home = () => {
       <About />
       <CaraouselSpot />
       <Wisata />
-      <section className="relative flex min-h-screen w-full flex-col items-center py-24">
-        <h2 className="z-20 text-heading-m font-semibold text-white md:text-[50px]">
-          Let{"'"}s Go To Rammang
-        </h2>
+      <section className="relative flex min-h-screen w-full flex-col py-24">
+        <div className="flex flex-col items-center gap-4 md:gap-10">
+          <h2 className="z-20 text-heading-m font-semibold text-white md:text-[50px]">
+            Let{"'"}s Go To Rammang
+          </h2>
+          <p className="z-20 px-10 text-center text-text-l font-light text-white md:w-1/2 md:px-0">
+            Discover breathtaking karst landscapes, tranquil river tours, and
+            vibrant village culture. Explore, unwind, and be amazed—your next
+            adventure starts here!
+          </p>
+        </div>
         <Image
           src={"/images/dive.png"}
           fill
