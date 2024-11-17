@@ -3,11 +3,13 @@ import Link from "next/link";
 import { Navlink } from "./navLink";
 import { useEffect, useState } from "react";
 import { IoIosClose, IoIosMenu } from "react-icons/io";
+import Image from "next/image";
 
+import { useTranslation } from "react-i18next";
 export const Navbar = () => {
   const [isScroll, setIsScroll] = useState(false);
   const [isMenu, setIsMenu] = useState(false);
-
+  const { t } = useTranslation();
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -30,21 +32,32 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`fixed z-[60] flex w-screen justify-between py-4 transition-colors duration-300 md:px-20 md:py-6 ${isScroll ? "bg-black text-white" : ""}`}
+      className={`fixed z-[60] flex w-screen items-center justify-between px-8 py-4 transition-colors duration-300 md:px-20 md:py-6 ${isScroll ? "bg-black bg-opacity-50 text-white" : ""}`}
     >
-      <h1 className="px-8 text-text-l font-bold md:text-heading-s">Rammang</h1>
+      <Image
+        src="/icon/welcome.webp"
+        width={50}
+        height={50}
+        objectFit="cover"
+        objectPosition="top"
+        alt=""
+        className=""
+      />
 
       <section className="hidden gap-8 px-8 md:inline-flex">
         {Navlink.map((item) => (
           <Link key={item.href} href={item.href}>
-            <div className="font-semibold">{item.title}</div>
+            <div className="font-semibold text-white">{t(item.title)}</div>
           </Link>
         ))}
       </section>
 
-      <div className="flex items-center px-8 md:hidden">
+      <div className="flex items-center md:hidden">
         {!isMenu ? (
-          <IoIosMenu className="h-8 w-8 cursor-pointer" onClick={openMenu} />
+          <IoIosMenu
+            className="h-8 w-8 cursor-pointer text-white"
+            onClick={openMenu}
+          />
         ) : (
           <IoIosClose
             className="z-[80] h-9 w-9 cursor-pointer text-white"

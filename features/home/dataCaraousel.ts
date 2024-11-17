@@ -4,9 +4,11 @@ export const DataCaraousel = [
     desc: "cave tourist attractive",
     src: "/images/prehistoris.png",
   },
-  { name: "River Tours", desc: "with natural views", src: "/images/river.png" },
+  { name: "River Tours", 
+    desc: "with natural views", 
+    src: "/images/river.png" },
   {
-    name: "ehistoris Caves",
+    name: "Cehistoris Caves",
     desc: "cave tourist attractive",
     src: "/images/hero.webp",
   },

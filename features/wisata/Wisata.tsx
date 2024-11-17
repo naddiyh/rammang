@@ -7,15 +7,21 @@ export const Wisata = () => {
       <h1 className="text-heading-m font-bold md:px-10 md:text-heading-l">
         Various kinds of beautiful caves
       </h1>
-      <section className="grid grid-cols-1 gap-6 md:grid-cols-3">
+      <section className="grid grid-cols-     1 gap-6 md:grid-cols-3">
         {DataWisata.map((item) => (
           <Link
             key={item.href}
             href={item.href}
-            className="flex flex-col gap-2 text-heading-s font-bold"
+            className="flex flex-col gap-2 text-heading-s font-bold duration-300 ease-in-out hover:underline hover:brightness-50"
           >
-            <Image src={item.img} alt="" width={450} height={200} />
-            {item.name}
+            <Image
+              src={item.img}
+              alt=""
+              width={450}
+              height={200}
+              objectFit="cover"
+            />
+            <h2 className="">{item.name}</h2>
           </Link>
         ))}
       </section>

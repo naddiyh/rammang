@@ -1,18 +1,18 @@
 export const Navlink = [
   {
-    title: "Beranda",
-    href: "#beranda",
+    title: "Home",
+    href: "/#beranda",
   },
   {
-    title: "Wisata",
-    href: "#wisata",
+    title: "Tour",
+    href: "/#wisata",
   },
   {
-    title: "Tentang Kami",
-    href: "#tentang",
+    title: "About us",
+    href: "/#tentang",
   },
   {
-    title: "Kontak",
-    href: "#kontak",
+    title: "Contact",
+    href: "/#kontak",
   },
 ];

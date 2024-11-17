@@ -8,9 +8,15 @@ importers:
 
   .:
     dependencies:
+      i18next:
+        specifier: ^23.16.5
+        version: 23.16.5
       next:
         specifier: 15.0.1
         version: 15.0.1(react-dom@19.0.0-rc-69d4b800-20241021(react@19.0.0-rc-69d4b800-20241021))(react@19.0.0-rc-69d4b800-20241021)
+      next-i18next:
+        specifier: ^15.3.1
+        version: 15.3.1(i18next@23.16.5)(next@15.0.1(react-dom@19.0.0-rc-69d4b800-20241021(react@19.0.0-rc-69d4b800-20241021))(react@19.0.0-rc-69d4b800-20241021))(react-i18next@15.1.1(i18next@23.16.5)(react-dom@19.0.0-rc-69d4b800-20241021(react@19.0.0-rc-69d4b800-20241021))(react@19.0.0-rc-69d4b800-20241021))(react@19.0.0-rc-69d4b800-20241021)
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -23,6 +29,9 @@ importers:
       react-dom:
         specifier: 19.0.0-rc-69d4b800-20241021
         version: 19.0.0-rc-69d4b800-20241021(react@19.0.0-rc-69d4b800-20241021)
+      react-i18next:
+        specifier: ^15.1.1
+        version: 15.1.1(i18next@23.16.5)(react-dom@19.0.0-rc-69d4b800-20241021(react@19.0.0-rc-69d4b800-20241021))(react@19.0.0-rc-69d4b800-20241021)
       react-icons:
         specifier: ^5.3.0
         version: 5.3.0(react@19.0.0-rc-69d4b800-20241021)
@@ -39,6 +48,9 @@ importers:
       '@types/react-dom':
         specifier: ^18
         version: 18.3.1
+      daisyui:
+        specifier: ^4.12.14
+        version: 4.12.14(postcss@8.4.47)
       eslint:
         specifier: ^8
         version: 8.57.1
@@ -60,6 +72,10 @@ packages:
   '@alloc/quick-lru@5.2.0':
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
+
+  '@babel/runtime@7.26.0':
+    resolution: {integrity: sha512-FDSOghenHTiToteC/QRlv2q3DhPZ/oOXTBoirfWNx1Cx3TMVcGWQtMMmQcSvb/JjpNeGzx8Pq/b4fKEJuWm1sw==}
+    engines: {node: '>=6.9.0'}
 
   '@emnapi/runtime@1.3.1':
     resolution: {integrity: sha512-kEBmG8KyqtxJZv+ygbEim+KCGtIq1fC22Ms3S4ziXmYKm8uyoLX0MHONVKwp+9opg390VaKRNt4a7A9NwmpNhw==}
@@ -308,6 +324,9 @@ packages:
   '@swc/helpers@0.5.13':
     resolution: {integrity: sha512-UoKGxQ3r5kYI9dALKJapMmuK+1zWM/H17Z1+iwnNmzcJRnfFuevZs375TA5rW31pu4BS4NoSy1fRsexDXfWn5w==}
 
+  '@types/hoist-non-react-statics@3.3.5':
+    resolution: {integrity: sha512-SbcrWzkKBw2cdwRTwQAswfpB9g9LJWfjtUeW/jvNwbhC8cpmmNYVePa+ncbUe0rGTQ7G3Ff6mYUN2VMfLVr+Sg==}
+
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
@@ -544,9 +563,15 @@ packages:
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
+  core-js@3.39.0:
+    resolution: {integrity: sha512-raM0ew0/jJUqkJ0E6e8UDtl+y/7ktFivgWvqw8dNSQeNWoSDLvQ1H/RN3aPXB9tBd4/FhyR4RDPGhsNIMsAn7g==}
+
   cross-spawn@7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
     engines: {node: '>= 8'}
+
+  css-selector-tokenizer@0.8.0:
+    resolution: {integrity: sha512-Jd6Ig3/pe62/qe5SBPTN8h8LeUg/pT4lLgtavPf7updwwHpvFzxvOQBHYj2LZDMjUnBzgvIUSjRcf6oT5HzHFg==}
 
   cssesc@3.0.0:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
@@ -555,6 +580,14 @@ packages:
 
   csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
+
+  culori@3.3.0:
+    resolution: {integrity: sha512-pHJg+jbuFsCjz9iclQBqyL3B2HLCBF71BwVNujUYEvCeQMvV97R59MNK3R2+jgJ3a1fcZgI9B3vYgz8lzr/BFQ==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+
+  daisyui@4.12.14:
+    resolution: {integrity: sha512-hA27cdBasdwd4/iEjn+aidoCrRroDuo3G5W9NDKaVCJI437Mm/3eSL/2u7MkZ0pt8a+TrYF3aT2pFVemTS3how==}
+    engines: {node: '>=16.9.0'}
 
   damerau-levenshtein@1.0.8:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
@@ -790,6 +823,9 @@ packages:
   fast-levenshtein@2.0.6:
     resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
 
+  fastparse@1.1.2:
+    resolution: {integrity: sha512-483XLLxTVIwWK3QTrMGRqUfUpoOs/0hbQrl2oz4J0pAcm3A3bu84wxTFqGqkJzewCLdME38xJLJAxBABfQT8sQ==}
+
   fastq@1.17.1:
     resolution: {integrity: sha512-sRVD3lWVIXWg6By68ZN7vho9a1pQcN/WBFaAAsDDFzlJjvoGx0P8z7V1t72grFJfJhu3YPZBuu25f7Kaw2jN1w==}
 
@@ -906,6 +942,18 @@ packages:
   hasown@2.0.2:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
+
+  hoist-non-react-statics@3.3.2:
+    resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
+
+  html-parse-stringify@3.0.1:
+    resolution: {integrity: sha512-KknJ50kTInJ7qIScF3jeaFRpMpE8/lfiTdzf/twXyPBLAGrLRTmkz3AdTnKeh40X8k9L2fdYwEp/42WGXIRGcg==}
+
+  i18next-fs-backend@2.3.2:
+    resolution: {integrity: sha512-LIwUlkqDZnUI8lnUxBnEj8K/FrHQTT/Sc+1rvDm9E8YvvY5YxzoEAASNx+W5M9DfD5s77lI5vSAFWeTp26B/3Q==}
+
+  i18next@23.16.5:
+    resolution: {integrity: sha512-KTlhE3EP9x6pPTAW7dy0WKIhoCpfOGhRQlO+jttQLgzVaoOjWwBWramu7Pp0i+8wDNduuzXfe3kkVbzrKyrbTA==}
 
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
@@ -1161,6 +1209,15 @@ packages:
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
+  next-i18next@15.3.1:
+    resolution: {integrity: sha512-+pa2pZJb7B6k5PKW3TLVMmAodqkNaOBWVYlpWX56mgcEJz0UMW+MKSdKM9Z72CHp6Bp48g7OWwDnLqxXNp/84w==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      i18next: '>= 23.7.13'
+      next: '>= 12.0.0'
+      react: '>= 17.0.2'
+      react-i18next: '>= 13.5.0'
+
   next@15.0.1:
     resolution: {integrity: sha512-PSkFkr/w7UnFWm+EP8y/QpHrJXMqpZzAXpergB/EqLPOh4SGPJXv1wj4mslr2hUZBAS9pX7/9YLIdxTv6fwytw==}
     engines: {node: '>=18.18.0'}
@@ -1406,6 +1463,19 @@ packages:
     peerDependencies:
       react: 19.0.0-rc-69d4b800-20241021
 
+  react-i18next@15.1.1:
+    resolution: {integrity: sha512-R/Vg9wIli2P3FfeI8o1eNJUJue5LWpFsQePCHdQDmX0Co3zkr6kdT8gAseb/yGeWbNz1Txc4bKDQuZYsC0kQfw==}
+    peerDependencies:
+      i18next: '>= 23.2.3'
+      react: '>= 16.8.0'
+      react-dom: '*'
+      react-native: '*'
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+
   react-icons@5.3.0:
     resolution: {integrity: sha512-DnUk8aFbTyQPSkCfF8dbX6kQjXA9DktMeJqfjrg6cK9vwQVMxmcA3BfP4QoiztVmEHtwlTgLFsPuH2NskKT6eg==}
     peerDependencies:
@@ -1428,6 +1498,9 @@ packages:
   reflect.getprototypeof@1.0.6:
     resolution: {integrity: sha512-fmfw4XgoDke3kdI6h4xcUz1dG8uaiv5q9gcEwLS4Pnth2kxT+GZ7YehS1JTMGBQmtV7Y4GFGbs2re2NqhdozUg==}
     engines: {node: '>= 0.4'}
+
+  regenerator-runtime@0.14.1:
+    resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
 
   regexp.prototype.flags@1.5.3:
     resolution: {integrity: sha512-vqlC04+RQoFalODCbCumG2xIOvapzVMHwsyIGM/SIE8fRhFFsXeH8/QQ+s0T0kDAhKc4k30s73/0ydkHQz6HlQ==}
@@ -1676,6 +1749,10 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
+  void-elements@3.1.0:
+    resolution: {integrity: sha512-Dhxzh5HZuiHQhbvTW9AMetFfBHDMYpo23Uo9btPXgdYP+3T5S+p+jgNy7spra+veYhBP2dCSgxR/i2Y02h5/6w==}
+    engines: {node: '>=0.10.0'}
+
   which-boxed-primitive@1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}
 
@@ -1723,6 +1800,10 @@ packages:
 snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
+
+  '@babel/runtime@7.26.0':
+    dependencies:
+      regenerator-runtime: 0.14.1
 
   '@emnapi/runtime@1.3.1':
     dependencies:
@@ -1921,6 +2002,11 @@ snapshots:
   '@swc/helpers@0.5.13':
     dependencies:
       tslib: 2.8.0
+
+  '@types/hoist-non-react-statics@3.3.5':
+    dependencies:
+      '@types/react': 18.3.12
+      hoist-non-react-statics: 3.3.2
 
   '@types/json5@0.0.29': {}
 
@@ -2209,15 +2295,33 @@ snapshots:
 
   concat-map@0.0.1: {}
 
+  core-js@3.39.0: {}
+
   cross-spawn@7.0.3:
     dependencies:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
 
+  css-selector-tokenizer@0.8.0:
+    dependencies:
+      cssesc: 3.0.0
+      fastparse: 1.1.2
+
   cssesc@3.0.0: {}
 
   csstype@3.1.3: {}
+
+  culori@3.3.0: {}
+
+  daisyui@4.12.14(postcss@8.4.47):
+    dependencies:
+      css-selector-tokenizer: 0.8.0
+      culori: 3.3.0
+      picocolors: 1.1.1
+      postcss-js: 4.0.1(postcss@8.4.47)
+    transitivePeerDependencies:
+      - postcss
 
   damerau-levenshtein@1.0.8: {}
 
@@ -2603,6 +2707,8 @@ snapshots:
 
   fast-levenshtein@2.0.6: {}
 
+  fastparse@1.1.2: {}
+
   fastq@1.17.1:
     dependencies:
       reusify: 1.0.4
@@ -2733,6 +2839,20 @@ snapshots:
   hasown@2.0.2:
     dependencies:
       function-bind: 1.1.2
+
+  hoist-non-react-statics@3.3.2:
+    dependencies:
+      react-is: 16.13.1
+
+  html-parse-stringify@3.0.1:
+    dependencies:
+      void-elements: 3.1.0
+
+  i18next-fs-backend@2.3.2: {}
+
+  i18next@23.16.5:
+    dependencies:
+      '@babel/runtime': 7.26.0
 
   ignore@5.3.2: {}
 
@@ -2968,6 +3088,18 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
+  next-i18next@15.3.1(i18next@23.16.5)(next@15.0.1(react-dom@19.0.0-rc-69d4b800-20241021(react@19.0.0-rc-69d4b800-20241021))(react@19.0.0-rc-69d4b800-20241021))(react-i18next@15.1.1(i18next@23.16.5)(react-dom@19.0.0-rc-69d4b800-20241021(react@19.0.0-rc-69d4b800-20241021))(react@19.0.0-rc-69d4b800-20241021))(react@19.0.0-rc-69d4b800-20241021):
+    dependencies:
+      '@babel/runtime': 7.26.0
+      '@types/hoist-non-react-statics': 3.3.5
+      core-js: 3.39.0
+      hoist-non-react-statics: 3.3.2
+      i18next: 23.16.5
+      i18next-fs-backend: 2.3.2
+      next: 15.0.1(react-dom@19.0.0-rc-69d4b800-20241021(react@19.0.0-rc-69d4b800-20241021))(react@19.0.0-rc-69d4b800-20241021)
+      react: 19.0.0-rc-69d4b800-20241021
+      react-i18next: 15.1.1(i18next@23.16.5)(react-dom@19.0.0-rc-69d4b800-20241021(react@19.0.0-rc-69d4b800-20241021))(react@19.0.0-rc-69d4b800-20241021)
+
   next@15.0.1(react-dom@19.0.0-rc-69d4b800-20241021(react@19.0.0-rc-69d4b800-20241021))(react@19.0.0-rc-69d4b800-20241021):
     dependencies:
       '@next/env': 15.0.1
@@ -3151,6 +3283,15 @@ snapshots:
       react: 19.0.0-rc-69d4b800-20241021
       scheduler: 0.25.0-rc-69d4b800-20241021
 
+  react-i18next@15.1.1(i18next@23.16.5)(react-dom@19.0.0-rc-69d4b800-20241021(react@19.0.0-rc-69d4b800-20241021))(react@19.0.0-rc-69d4b800-20241021):
+    dependencies:
+      '@babel/runtime': 7.26.0
+      html-parse-stringify: 3.0.1
+      i18next: 23.16.5
+      react: 19.0.0-rc-69d4b800-20241021
+    optionalDependencies:
+      react-dom: 19.0.0-rc-69d4b800-20241021(react@19.0.0-rc-69d4b800-20241021)
+
   react-icons@5.3.0(react@19.0.0-rc-69d4b800-20241021):
     dependencies:
       react: 19.0.0-rc-69d4b800-20241021
@@ -3176,6 +3317,8 @@ snapshots:
       get-intrinsic: 1.2.4
       globalthis: 1.0.4
       which-builtin-type: 1.1.4
+
+  regenerator-runtime@0.14.1: {}
 
   regexp.prototype.flags@1.5.3:
     dependencies:
@@ -3502,6 +3645,8 @@ snapshots:
       react: 19.0.0-rc-69d4b800-20241021
 
   util-deprecate@1.0.2: {}
+
+  void-elements@3.1.0: {}
 
   which-boxed-primitive@1.0.2:
     dependencies:
