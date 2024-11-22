@@ -14,10 +14,16 @@ export const CaraouselSpot = () => {
     event.preventDefault();
   };
   return (
-    <section id="wisata" className="flex w-full flex-col gap-10 md:gap-16">
-      <h1 className="px-8 text-heading-m font-bold italic md:px-20 md:text-heading-l">
-        Dive Into The Beauty of The World
-      </h1>
+    <section id="wisata" className="flex w-full flex-col gap-10 md:gap-10">
+      <div className="flex flex-col gap-2">
+        <h1 className="px-8 text-heading-m font-bold italic md:px-20 md:text-heading-l">
+          Dive Into The Beauty of The World
+        </h1>
+        <p className="px-8 text-heading-s md:px-20">
+          Explore the stunning karst landscapes, prehistoric caves, and tranquil
+          rivers that make Rammang-Rammang a truly unique destination
+        </p>
+      </div>
       <div
         ref={ref}
         onMouseDown={handleMouseDown}

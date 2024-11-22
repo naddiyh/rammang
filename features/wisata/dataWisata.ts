@@ -7,17 +7,17 @@ type DataWisataItem = {
 export const DataWisata: DataWisataItem[] = [
   {
     name: "Goa Kunang-Kunang",
-    img: "/images/goa.png",
+    img: "/images/kunangg.png",
     href: "/goakunang",
   },
   {
     name: "Batu Cave",
-    img: "/images/goa.png",
+    img: "/images/goabatu3.png",
     href: "/goabatu",
   },
   {
     name: "Goa Berlian",
-    img: "/images/goa.png",
+    img: "/images/berlian.png",
     href: "/goaberlian",
   },
 ];

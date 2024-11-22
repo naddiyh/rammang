@@ -7,7 +7,7 @@ import { Navlink } from "../Navbar/navLink";
 
 export const Footer = () => {
   return (
-    <footer className="bottom-0 flex flex-col gap-20 bg-gray-800 px-8 py-10 text-white md:flex-row md:px-20">
+    <footer className="bottom-0 flex flex-col gap-10 bg-gray-800 px-8 py-10 text-white md:flex-row md:gap-20 md:px-20">
       <aside className="md:w-1/2">
         <Image
           src="/icon/welcome.webp"

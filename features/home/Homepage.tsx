@@ -1,5 +1,5 @@
 import { Box } from "@/app/components/atom/Box";
-import { PrimaryButton } from "@/app/components/atom/PrimaryButton";
+
 import Image from "next/image";
 import { About } from "../about/About";
 import { CaraouselSpot } from "./CaraouselSpot";
@@ -39,15 +39,15 @@ export const Home = () => {
                 A breathtaking limestone karst area surrounded by lush greenery
                 and calm rivers in Maros, Indonesia
               </p>
-              <PrimaryButton fullwidth={false} className="text-white">
+              {/* <PrimaryButton fullwidth={false} className="text-white">
                 Learn More
-              </PrimaryButton>
+              </PrimaryButton> */}
             </section>
           </div>
         </section>
         <section className="flex flex-col items-center justify-center gap-10 px-10 py-10 md:flex-row md:gap-16 md:py-14">
           <Box>
-            <p className="text-heading-l font-bold">3+</p>
+            <p className="text-heading-l font-bold">5+</p>
             <p>Activities</p>
           </Box>
           <Box>
@@ -55,8 +55,8 @@ export const Home = () => {
             <p>Annual visitors per years</p>
           </Box>
           <Box>
-            <p className="text-heading-l font-bold">3+</p>
-            <p>activities</p>
+            <p className="text-heading-l font-bold">07:00-18:00</p>
+            <p>Open Hours</p>
           </Box>
         </section>
         <About />
